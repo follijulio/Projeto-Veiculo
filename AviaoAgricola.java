@@ -72,9 +72,9 @@ public class AviaoAgricola extends Aviao {
         super.frear();
     }
 
-    public Motor getA() {
+    public Motor getMotor() {
 
-        return super.getA();
+        return super.getMotor();
     }
 
     public int getCapacidadeTanque() {
@@ -116,9 +116,9 @@ public class AviaoAgricola extends Aviao {
         super.ligar();
     }
 
-    public void setA(Motor a) {
+    public void setMotor(Motor a) {
 
-        super.setA(a);
+        super.setMotor(a);
     }
 
     public void setCapacidadeTanque(int capacidadeTanque) {

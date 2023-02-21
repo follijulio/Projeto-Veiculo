@@ -6,7 +6,7 @@ public abstract class Veiculo {
     private String modelo;
     private String pintura;
     private int capacidadeTanque;
-    private Motor A;
+    private Motor motor;
     private int passageiros;
     private boolean ligado;
     private boolean emMovimento;
@@ -77,12 +77,12 @@ public abstract class Veiculo {
         this.capacidadeTanque = capacidadeTanque;
     }
 
-    public Motor getA() {
-        return A;
+    public Motor getMotor() {
+        return motor;
     }
 
-    public void setA(Motor a) {
-        A = a;
+    public void setMotor(Motor motor) {
+        this.motor = motor;
     }
 
     public int getPassageiros() {

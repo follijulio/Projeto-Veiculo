@@ -36,9 +36,9 @@ public class AviaoPassageiro extends Aviao {
         super.frear();
     }
 
-    public Motor getA() {
+    public Motor getMotor() {
 
-        return super.getA();
+        return super.getMotor();
     }
 
     public int getCapacidadeTanque() {
@@ -80,9 +80,9 @@ public class AviaoPassageiro extends Aviao {
         super.ligar();
     }
 
-    public void setA(Motor a) {
+    public void setMotor(Motor motor) {
 
-        super.setA(a);
+        super.setMotor(motor);
     }
 
     public void setCapacidadeTanque(int capacidadeTanque) {

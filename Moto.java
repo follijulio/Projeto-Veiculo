@@ -32,9 +32,9 @@ public class Moto extends VeiculoTerrestre {
         super.frear();
     }
 
-    public Motor getA() {
+    public Motor getMotor() {
 
-        return super.getA();
+        return super.getMotor();
     }
 
     public int getCapacidadeTanque() {
@@ -78,7 +78,7 @@ public class Moto extends VeiculoTerrestre {
 
     public void setA(Motor a) {
 
-        super.setA(a);
+        super.setMotor(a);
     }
 
     public void setCapacidadeTanque(int capacidadeTanque) {
