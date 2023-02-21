@@ -25,7 +25,7 @@ public class Carro extends VeiculoTerrestre {
 
     public void fecharMala() {
         if (this.CapAtualMala > CapMala) {
-            System.out.println("IMPOSSIVEL fechar mala, ela está sobrecarregada");
+            System.out.println("IMPOSSIVEL fechar mala, ela está sobrecarregada.");
         } else {
             setMalaAberta(false);
         }
