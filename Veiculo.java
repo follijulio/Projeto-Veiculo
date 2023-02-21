@@ -1,15 +1,15 @@
 package JAVA.projetos.SistemaDeVeiculos;
 
 public abstract class Veiculo {
-    protected int id;
-    protected String marca;
-    protected String modelo;
-    protected String pintura;
-    protected int capacidadeTanque;
-    protected Motor A;
-    protected int passageiros;
-    protected boolean ligado;
-    public boolean emMovimento;
+    private int id;
+    private String marca;
+    private String modelo;
+    private String pintura;
+    private int capacidadeTanque;
+    private Motor A;
+    private int passageiros;
+    private boolean ligado;
+    private boolean emMovimento;
 
     // Metodos
 
