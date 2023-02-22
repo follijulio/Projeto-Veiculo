@@ -133,9 +133,9 @@ public class Carro extends VeiculoTerrestre {
         }
     }
 
-    public Motor getA() {
+    public Motor getMotor() {
 
-        return super.getA();
+        return super.getMotor();
     }
 
     public int getCapacidadeTanque() {
@@ -177,9 +177,9 @@ public class Carro extends VeiculoTerrestre {
         super.ligar();
     }
 
-    public void setA(Motor a) {
+    public void setMotor(Motor motor) {
 
-        super.setA(a);
+        super.setMotor(motor);
     }
 
     public void setCapacidadeTanque(int capacidadeTanque) {
