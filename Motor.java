@@ -2,9 +2,11 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public abstract class Motor {
 
-    public String nome;
-    public int potencia;
+    private String nome;
+    private int potencia;
 
+
+    //Getters
     public String getNome() {
         return nome;
     }
@@ -12,6 +14,8 @@ public abstract class Motor {
         return potencia;
     }
     
+
+    //Setters
     public void setNome(String nome) {
         this.nome = nome;
     }

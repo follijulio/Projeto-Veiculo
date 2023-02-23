@@ -2,9 +2,9 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public class AviaoPassageiro extends Aviao {
 
-    public boolean tremAberto;
-    public int passageiros;
+    private boolean tremAberto;
 
+    // Metodos
     public void abrirTrem() {
 
     }
@@ -13,17 +13,14 @@ public class AviaoPassageiro extends Aviao {
 
     }
 
-    public boolean isTremAberto() {
-        return tremAberto;
-    }
-
-    public void setTremAberto(boolean tremAberto) {
-        this.tremAberto = tremAberto;
-    }
-
     public void acelerar() {
 
         super.acelerar();
+    }
+
+    public void ligar() {
+
+        super.ligar();
     }
 
     public void desligar() {
@@ -36,6 +33,7 @@ public class AviaoPassageiro extends Aviao {
         super.frear();
     }
 
+    // Getters
     public Motor getMotor() {
 
         return super.getMotor();
@@ -75,10 +73,15 @@ public class AviaoPassageiro extends Aviao {
         return super.isLigado();
     }
 
-    public void ligar() {
-
-        super.ligar();
+    public void setPassageiros(int passageiros) {
+        super.setPassageiros(passageiros);
     }
+
+    public boolean isTremAberto() {
+        return tremAberto;
+    }
+
+    // Setters
 
     public void setMotor(Motor motor) {
 
@@ -110,12 +113,12 @@ public class AviaoPassageiro extends Aviao {
         super.setModelo(modelo);
     }
 
-    public void setPassageiros(int passageiros) {
-        super.setPassageiros(passageiros);
-    }
-
     public void setPintura(String pintura) {
         super.setPintura(pintura);
+    }
+
+    public void setTremAberto(boolean tremAberto) {
+        this.tremAberto = tremAberto;
     }
 
 }

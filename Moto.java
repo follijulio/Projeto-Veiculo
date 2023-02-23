@@ -2,7 +2,7 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public class Moto extends VeiculoTerrestre {
 
-    public boolean embreagem;
+    private boolean embreagem;
 
     public void darGrau() {
         System.out.println("RANDANDANDA\nOLHA A QUEDA MININUUUUU");

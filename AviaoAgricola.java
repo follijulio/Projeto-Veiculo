@@ -2,11 +2,11 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public class AviaoAgricola extends Aviao {
 
-    public int capacidadeIrrigação;
-    public boolean compartimentoAberto;
-    public int passageiros;
-    public boolean tremAberto;
+    private int capacidadeIrrigação;
+    private boolean compartimentoAberto;
+    private boolean tremAberto;
 
+    // Metodos
     public void abrirCompatimento() {
 
     }
@@ -33,6 +33,27 @@ public class AviaoAgricola extends Aviao {
 
     }
 
+    public void acelerar() {
+
+        super.acelerar();
+    }
+
+    public void ligar() {
+
+        super.ligar();
+    }
+
+    public void desligar() {
+
+        super.desligar();
+    }
+
+    public void frear() {
+
+        super.frear();
+    }
+
+    // Getters
     public int getCapacidadeIrrigação() {
         return capacidadeIrrigação;
     }
@@ -45,31 +66,8 @@ public class AviaoAgricola extends Aviao {
         return compartimentoAberto;
     }
 
-    public void setCompartimentoAberto(boolean compartimentoAberto) {
-        this.compartimentoAberto = compartimentoAberto;
-    }
-
     public boolean isTremAberto() {
         return tremAberto;
-    }
-
-    public void setTremAberto() {
-        this.tremAberto = true;
-    }
-
-    public void acelerar() {
-
-        super.acelerar();
-    }
-
-    public void desligar() {
-
-        super.desligar();
-    }
-
-    public void frear() {
-
-        super.frear();
     }
 
     public Motor getMotor() {
@@ -111,11 +109,7 @@ public class AviaoAgricola extends Aviao {
         return super.isLigado();
     }
 
-    public void ligar() {
-
-        super.ligar();
-    }
-
+    // Setters
     public void setMotor(Motor a) {
 
         super.setMotor(a);
@@ -152,6 +146,14 @@ public class AviaoAgricola extends Aviao {
 
     public void setPintura(String pintura) {
         super.setPintura(pintura);
+    }
+
+    public void setCompartimentoAberto(boolean compartimentoAberto) {
+        this.compartimentoAberto = compartimentoAberto;
+    }
+
+    public void setTremAberto() {
+        this.tremAberto = true;
     }
 
 }

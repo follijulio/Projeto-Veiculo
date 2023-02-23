@@ -1,9 +1,9 @@
 package JAVA.projetos.SistemaDeVeiculos;
 
 public class VeiculoTerrestre extends Veiculo{
-    public int rodas;
+    private int rodas;
     
-    
+    //Getters
     public int getRodas() {
         return rodas;
     }
