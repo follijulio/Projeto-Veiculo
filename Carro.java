@@ -92,6 +92,10 @@ public class Carro extends VeiculoTerrestre {
         return this.tetoSolar;
     }
 
+    public int getCapAtualMala() {
+        return this.CapAtualMala;
+    }
+
     public Boolean getMalaAberta() {
         return this.malaAberta;
     }
@@ -100,109 +104,8 @@ public class Carro extends VeiculoTerrestre {
         this.malaAberta = malaAberta;
     }
 
-    public int getCapAtualMala() {
-        return this.CapAtualMala;
-    }
-
-    public int getRodas() {
-        return super.getRodas();
-    }
-
-    public boolean isEmMovimento() {
-
-        return super.isEmMovimento();
-    }
-
-    public Motor getMotor() {
-
-        return super.getMotor();
-    }
-
-    public int getCapacidadeTanque() {
-
-        return super.getCapacidadeTanque();
-    }
-
-    public int getId() {
-
-        return super.getId();
-    }
-
-    public String getMarca() {
-
-        return super.getMarca();
-    }
-
-    public String getModelo() {
-        return super.getModelo();
-    }
-
-    public int getPassageiros() {
-
-        return super.getPassageiros();
-    }
-
-    public String getPintura() {
-
-        return super.getPintura();
-    }
-
-    public boolean isLigado() {
-
-        return super.isLigado();
-    }
-
-    // Setters
-    public void setMotor(Motor motor) {
-
-        super.setMotor(motor);
-    }
-
-    public void setCapacidadeTanque(int capacidadeTanque) {
-
-        super.setCapacidadeTanque(capacidadeTanque);
-    }
-
-    public void setId(int id) {
-
-        super.setId(id);
-    }
-
-    public void setLigado(boolean ligado) {
-
-        super.setLigado(ligado);
-    }
-
-    public void setMarca(String marca) {
-
-        super.setMarca(marca);
-    }
-
-    public void setModelo(String modelo) {
-
-        super.setModelo(modelo);
-    }
-
     public void setPortas(int portas) {
         this.portas = portas;
-    }
-
-    public void setPassageiros(int passageiros) {
-        super.setPassageiros(passageiros);
-    }
-
-    public void setPintura(String pintura) {
-        super.setPintura(pintura);
-    }
-
-    public void setEmMovimento(Boolean emMovimento) {
-
-        super.setEmMovimento(emMovimento);
-    }
-
-    public void setRodas(int rodas) {
-
-        super.setRodas(rodas);
     }
 
     public void setCapMala(int capMala) {

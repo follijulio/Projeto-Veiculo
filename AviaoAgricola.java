@@ -54,9 +54,9 @@ public class AviaoAgricola extends Aviao {
             if (isCompartimentoAberto()) {
                 System.out.println("enchendo compartimento");
 
-                System.out.printf("ele está com %d'%' da sua carga",getCargaComp());
-                auxiliar =  100 - getCargaComp();
-                System.out.printf("O compartimento enchera %d'%' ",auxiliar);
+                System.out.printf("ele está com %d'%' da sua carga", getCargaComp());
+                auxiliar = 100 - getCargaComp();
+                System.out.printf("O compartimento enchera %d'%' ", auxiliar);
 
                 setCargaComp(100);
             } else {
@@ -78,26 +78,6 @@ public class AviaoAgricola extends Aviao {
 
     }
 
-    public void acelerar() {
-
-        super.acelerar();
-    }
-
-    public void ligar() {
-
-        super.ligar();
-    }
-
-    public void desligar() {
-
-        super.desligar();
-    }
-
-    public void frear() {
-
-        super.frear();
-    }
-
     // Getters
     public int getCapacidadeIrrigação() {
         return this.capacidadeIrrigação;
@@ -113,84 +93,6 @@ public class AviaoAgricola extends Aviao {
 
     public boolean isTremAberto() {
         return this.tremAberto;
-    }
-
-    public Motor getMotor() {
-
-        return super.getMotor();
-    }
-
-    public int getCapacidadeTanque() {
-
-        return super.getCapacidadeTanque();
-    }
-
-    public int getId() {
-
-        return super.getId();
-    }
-
-    public String getMarca() {
-
-        return super.getMarca();
-    }
-
-    public String getModelo() {
-        return super.getModelo();
-    }
-
-    public int getPassageiros() {
-
-        return super.getPassageiros();
-    }
-
-    public String getPintura() {
-
-        return super.getPintura();
-    }
-
-    public boolean isLigado() {
-
-        return super.isLigado();
-    }
-
-    // Setters
-    public void setMotor(Motor a) {
-
-        super.setMotor(a);
-    }
-
-    public void setCapacidadeTanque(int capacidadeTanque) {
-
-        super.setCapacidadeTanque(capacidadeTanque);
-    }
-
-    public void setId(int id) {
-
-        super.setId(id);
-    }
-
-    public void setLigado(boolean ligado) {
-
-        super.setLigado(ligado);
-    }
-
-    public void setMarca(String marca) {
-
-        super.setMarca(marca);
-    }
-
-    public void setModelo(String modelo) {
-
-        super.setModelo(modelo);
-    }
-
-    public void setPassageiros(int passageiros) {
-        super.setPassageiros(passageiros);
-    }
-
-    public void setPintura(String pintura) {
-        super.setPintura(pintura);
     }
 
     public void setCompartimentoAberto(boolean compartimentoAberto) {
