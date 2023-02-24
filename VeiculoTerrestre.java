@@ -5,7 +5,7 @@ public class VeiculoTerrestre extends Veiculo{
     
     //Getters
     public int getRodas() {
-        return rodas;
+        return this.rodas;
     }
 
     public void setRodas(int rodas) {

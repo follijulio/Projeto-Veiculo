@@ -55,7 +55,7 @@ public class AviaoAgricola extends Aviao {
 
     // Getters
     public int getCapacidadeIrrigação() {
-        return capacidadeIrrigação;
+        return this.capacidadeIrrigação;
     }
 
     public void setCapacidadeIrrigação(int capacidadeIrrigação) {
@@ -63,11 +63,11 @@ public class AviaoAgricola extends Aviao {
     }
 
     public boolean isCompartimentoAberto() {
-        return compartimentoAberto;
+        return this.compartimentoAberto;
     }
 
     public boolean isTremAberto() {
-        return tremAberto;
+        return this.tremAberto;
     }
 
     public Motor getMotor() {

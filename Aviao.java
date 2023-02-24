@@ -38,27 +38,27 @@ public abstract class Aviao extends Veiculo {
 
     // Getters
     public int getNumMotores() {
-        return numMotores;
+        return this.numMotores;
     }
 
     public float getEnvergaduraAsa() {
-        return envergaduraAsa;
+        return this.envergaduraAsa;
     }
 
     public int getTremDePouso() {
-        return tremDePouso;
+        return this.tremDePouso;
     }
 
     public int getPassageiros() {
-        return passageiros;
+        return this.passageiros;
     }
 
     public boolean isTremAberto() {
-        return tremAberto;
+        return this.tremAberto;
     }
 
     public boolean isEmVoo() {
-        return emVoo;
+        return this.emVoo;
     }
 
     // Setters

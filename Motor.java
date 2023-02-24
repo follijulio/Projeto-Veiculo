@@ -8,10 +8,10 @@ public abstract class Motor {
 
     //Getters
     public String getNome() {
-        return nome;
+        return this.nome;
     }
     public int getPotencia() {
-        return potencia;
+        return this.potencia;
     }
     
 
