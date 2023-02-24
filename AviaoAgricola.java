@@ -10,7 +10,7 @@ public class AviaoAgricola extends Aviao {
     // Metodos
     public void abrirCompatimento() {
         if (isCompartimentoAberto()) {
-            System.out.println("Compartimento já estava aberto");
+            System.out.println("Compartimento já estava aberto.");
         } else {
             System.out.println("Abrindo compartimento...");
             setCompartimentoAberto(true);
