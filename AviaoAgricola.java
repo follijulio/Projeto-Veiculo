@@ -1,5 +1,4 @@
 
-
 public class AviaoAgricola extends Aviao {
 
     private int capacidadeIrrigação;
@@ -54,9 +53,9 @@ public class AviaoAgricola extends Aviao {
             if (isCompartimentoAberto()) {
                 System.out.println("enchendo compartimento");
 
-                System.out.printf("ele está com %d'%' da sua carga",getCargaComp());
-                auxiliar =  100 - getCargaComp();
-                System.out.printf("O compartimento enchera %d'%' ",auxiliar);
+                System.out.printf("ele está com %d'%' da sua carga", getCargaComp());
+                auxiliar = 100 - getCargaComp();
+                System.out.printf("O compartimento enchera %d'%' ", auxiliar);
 
                 setCargaComp(100);
             } else {
