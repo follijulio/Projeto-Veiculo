@@ -7,23 +7,36 @@ public abstract class Aviao extends Veiculo {
     private int tremDePouso;
     private boolean tremAberto;
     private int passageiros;
+    private boolean emVoo;
 
     // Metodos
     public void pousar() {
-        if (isTremAberto()) {
-            System.out.println("Poubhsando...");
+        if (isEmVoo()) {
+            if (isTremAberto()) {
+                System.out.println("Pousando...");
+                setEmVoo(false);
+                setEmMovimento(false);
+            } else {
+                System.out.println("IMPOSSIVEL POUSAR, O trem de pouso está fechado");
+            }
         } else {
-            System.out.println("IMPOSSIVEL POUSAR, O trem de pouso está fechado");
+            System.out.println("O avião está no chão... assim sendo não pode pousar");
+
+        }
+    }
+
+    public void decolar() {
+        if (isEmVoo()) {
+            System.out.println("O avião já está em voo...");
+        } else {
+            System.out.println("Decolando...");
+            setEmVoo(true);
+            setEmMovimento(true);
         }
 
     }
 
-    public void decolar() {
-
-    }
-
-
-    //Getters
+    // Getters
     public int getNumMotores() {
         return numMotores;
     }
@@ -44,8 +57,11 @@ public abstract class Aviao extends Veiculo {
         return tremAberto;
     }
 
+    public boolean isEmVoo() {
+        return emVoo;
+    }
 
-    //Setters
+    // Setters
     public void setEnvergaduraAsa(float envergaduraAsa) {
         this.envergaduraAsa = envergaduraAsa;
     }
@@ -64,6 +80,10 @@ public abstract class Aviao extends Veiculo {
 
     public void setPassageiros(int passageiros) {
         this.passageiros = passageiros;
+    }
+
+    public void setEmVoo(boolean emVoo) {
+        this.emVoo = emVoo;
     }
 
 }
