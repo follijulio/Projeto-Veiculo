@@ -1,9 +1,8 @@
-package JAVA.projetos.SistemaDeVeiculos;
 
-public class VeiculoTerrestre extends Veiculo{
+public class VeiculoTerrestre extends Veiculo {
     private int rodas;
-    
-    //Getters
+
+    // Getters
     public int getRodas() {
         return this.rodas;
     }
@@ -11,5 +10,5 @@ public class VeiculoTerrestre extends Veiculo{
     public void setRodas(int rodas) {
         this.rodas = rodas;
     }
-    
+
 }
