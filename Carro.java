@@ -1,4 +1,3 @@
-package JAVA.projetos.SistemaDeVeiculos;
 
 public class Carro extends VeiculoTerrestre {
 

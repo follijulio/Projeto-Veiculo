@@ -1,4 +1,3 @@
-package JAVA.projetos.SistemaDeVeiculos;
 
 public abstract class Veiculo {
     private int id;
@@ -78,11 +77,8 @@ public abstract class Veiculo {
 
     }
 
-    private void defVelocidade() {
-
-        setTelociadadeMax(motor.getPotencia() * 0.656);
-
-    }
+    
+    
 
     // Getters
     public int getId() {
@@ -172,7 +168,7 @@ public abstract class Veiculo {
     }
 
     public int getVelociadade() {
-        return this.velociadade;
+        return (int) this.velociadade;
     }
 
     public void setVelociadade(int velociadade) {
