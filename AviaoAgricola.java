@@ -74,7 +74,7 @@ public class AviaoAgricola extends Aviao {
     }
 
     public void fecharTrem() {
-        System.out.println("IMPOSSIVEL FECHAR TREM DE POUSO");
+        System.out.println("IMPOSSIVEL FECHAR TREM DE POUSO.");
 
     }
 
