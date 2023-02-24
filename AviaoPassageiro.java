@@ -78,7 +78,7 @@ public class AviaoPassageiro extends Aviao {
     }
 
     public boolean isTremAberto() {
-        return tremAberto;
+        return this.tremAberto;
     }
 
     // Setters

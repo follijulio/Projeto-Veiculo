@@ -10,7 +10,7 @@ public class Moto extends VeiculoTerrestre {
     }
 
     public boolean isEmbreagem() {
-        return embreagem;
+        return this.embreagem;
     }
 
     public void setEmbreagem(boolean embreagem) {

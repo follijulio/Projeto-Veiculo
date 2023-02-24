@@ -86,39 +86,39 @@ public abstract class Veiculo {
 
     // Getters
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public String getPintura() {
-        return pintura;
+        return this.pintura;
     }
 
     public int getCapacidadeTanque() {
-        return capacidadeTanque;
+        return this.capacidadeTanque;
     }
 
     public Motor getMotor() {
-        return motor;
+        return this.motor;
     }
 
     public int getPassageiros() {
-        return passageiros;
+        return this.passageiros;
     }
 
     public boolean isLigado() {
-        return ligado;
+        return this.ligado;
     }
 
     public boolean isEmMovimento() {
-        return emMovimento;
+        return this.emMovimento;
     }
 
     // Setters
@@ -160,7 +160,7 @@ public abstract class Veiculo {
     }
 
     public int getCargaTanquePor() {
-        return cargaTanquePor;
+        return this.cargaTanquePor;
     }
 
     public void setCargaTanquePor(int cargaTanquePor) {
@@ -172,7 +172,7 @@ public abstract class Veiculo {
     }
 
     public int getVelociadade() {
-        return velociadade;
+        return this.velociadade;
     }
 
     public void setVelociadade(int velociadade) {
@@ -185,7 +185,7 @@ public abstract class Veiculo {
     }
 
     public float getVelociadadeMax() {
-        return velociadadeMax;
+        return this.velociadadeMax;
     }
 
     public void setVelociadadeMax(float velociadadeMax) {

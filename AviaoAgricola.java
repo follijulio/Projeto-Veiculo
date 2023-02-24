@@ -100,7 +100,7 @@ public class AviaoAgricola extends Aviao {
 
     // Getters
     public int getCapacidadeIrrigação() {
-        return capacidadeIrrigação;
+        return this.capacidadeIrrigação;
     }
 
     public void setCapacidadeIrrigação(int capacidadeIrrigação) {

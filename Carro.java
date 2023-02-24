@@ -81,19 +81,19 @@ public class Carro extends VeiculoTerrestre {
 
     // Getters
     public int getPortas() {
-        return portas;
+        return this.portas;
     }
 
     public int getCapMala() {
-        return CapMala;
+        return this.CapMala;
     }
 
     public boolean isTetoSolar() {
-        return tetoSolar;
+        return this.tetoSolar;
     }
 
     public Boolean getMalaAberta() {
-        return malaAberta;
+        return this.malaAberta;
     }
 
     public void setMalaAberta(Boolean malaAberta) {
@@ -101,7 +101,7 @@ public class Carro extends VeiculoTerrestre {
     }
 
     public int getCapAtualMala() {
-        return CapAtualMala;
+        return this.CapAtualMala;
     }
 
     public int getRodas() {
@@ -206,7 +206,7 @@ public class Carro extends VeiculoTerrestre {
     }
 
     public void setCapMala(int capMala) {
-        CapMala = capMala;
+        this.CapMala = capMala;
     }
 
     public void setTetoSolar(boolean tetoSolar) {
@@ -214,6 +214,6 @@ public class Carro extends VeiculoTerrestre {
     }
 
     public void setCapAtualMala(int capAtualMala) {
-        CapAtualMala = capAtualMala;
+        this.CapAtualMala = capAtualMala;
     }
 }
