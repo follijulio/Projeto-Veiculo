@@ -1,4 +1,4 @@
-package JAVA.projetos.SistemaDeVeiculos;
+
 
 public class AviaoPassageiro extends Aviao {
 
