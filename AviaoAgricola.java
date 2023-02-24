@@ -5,21 +5,66 @@ public class AviaoAgricola extends Aviao {
     private int capacidadeIrrigação;
     private boolean compartimentoAberto;
     private boolean tremAberto;
+    private int cargaComp;
 
     // Metodos
     public void abrirCompatimento() {
+        if (isCompartimentoAberto()) {
+            System.out.println("Compartimento já estava aberto");
+        } else {
+            System.out.println("Abrindo compartimento...");
+            setCompartimentoAberto(true);
+        }
 
     }
 
     public void fecharCompatimento() {
+        if (isCompartimentoAberto()) {
+            System.out.println("Fechando compartimento");
+            setCompartimentoAberto(false);
+        } else {
+            System.out.println("O compartimento já está fechado");
+        }
 
     }
 
     public void esvaziarCompartimento() {
+        if (getCargaComp() <= 0) {
+            System.out.println("O compartimento já está vazio");
+
+        } else {
+            if (isCompartimentoAberto()) {
+                System.out.println("esvaziando compartimento");
+                setCargaComp(0);
+            } else {
+                System.out.println("O compartimento está fechado, assim sendo, não pode ser esvaziado");
+
+            }
+
+        }
 
     }
 
     public void encherCompartimento() {
+        int auxiliar;
+        if (getCargaComp() >= 100) {
+            System.out.println("O compartimento já está cheio");
+
+        } else {
+            if (isCompartimentoAberto()) {
+                System.out.println("enchendo compartimento");
+
+                System.out.printf("ele está com %d'%' da sua carga",getCargaComp());
+                auxiliar =  100 - getCargaComp();
+                System.out.printf("O compartimento enchera %d'%' ",auxiliar);
+
+                setCargaComp(100);
+            } else {
+                System.out.println("O compartimento está fechado, assim sendo, não pode ser enchido");
+
+            }
+
+        }
 
     }
 
@@ -63,11 +108,11 @@ public class AviaoAgricola extends Aviao {
     }
 
     public boolean isCompartimentoAberto() {
-        return compartimentoAberto;
+        return this.compartimentoAberto;
     }
 
     public boolean isTremAberto() {
-        return tremAberto;
+        return this.tremAberto;
     }
 
     public Motor getMotor() {
@@ -154,6 +199,18 @@ public class AviaoAgricola extends Aviao {
 
     public void setTremAberto() {
         this.tremAberto = true;
+    }
+
+    public void setTremAberto(boolean tremAberto) {
+        this.tremAberto = tremAberto;
+    }
+
+    public int getCargaComp() {
+        return this.cargaComp;
+    }
+
+    public void setCargaComp(int cargaComp) {
+        this.cargaComp = cargaComp;
     }
 
 }
