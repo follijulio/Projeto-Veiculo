@@ -2,95 +2,15 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public class Carro extends VeiculoTerrestre {
 
-    public boolean isEmMovimento() {
-
-        return super.isEmMovimento();
-    }
-
-    public void setEmMovimento(Boolean emMovimento) {
-
-        super.setEmMovimento(emMovimento);
-    }
-
-    public int portas;
-    public int CapMala;
-    public int CapAtualMala;
-    public boolean tetoSolar;
-    public Boolean malaAberta;
+    private int portas;
+    private int CapMala;
+    private int CapAtualMala;
+    private boolean tetoSolar;
+    private Boolean malaAberta;
 
     public void abrirMala() {
         setMalaAberta(true);
 
-    }
-
-    public void fecharMala() {
-        if (this.CapAtualMala > CapMala) {
-            System.out.println("IMPOSSIVEL fechar mala, ela está sobrecarregada.");
-        } else {
-            setMalaAberta(false);
-        }
-
-    }
-
-    public void darRe() {
-        if (isLigado()) {
-            if (getMalaAberta()) {
-                System.out.println("IMPOSSIVEL DAR RÉ, A mala está aberta");
-            } else {
-                System.out.println("Dando ré\nBI BI BI BI BI");
-            }
-        } else {
-            System.out.println("IMPOSSIVEL DAR RÉ, O carro está desligado");
-        }
-    }
-
-    public int getPortas() {
-        return portas;
-    }
-
-    public int getCapMala() {
-        return CapMala;
-    }
-
-    public boolean isTetoSolar() {
-        return tetoSolar;
-    }
-
-    public Boolean getMalaAberta() {
-        return malaAberta;
-    }
-
-    public void setPortas(int portas) {
-        this.portas = portas;
-    }
-
-    public void setCapMala(int capMala) {
-        CapMala = capMala;
-    }
-
-    public void setTetoSolar(boolean tetoSolar) {
-        this.tetoSolar = tetoSolar;
-    }
-
-    public void setMalaAberta(Boolean malaAberta) {
-        this.malaAberta = malaAberta;
-    }
-
-    public int getCapAtualMala() {
-        return CapAtualMala;
-    }
-
-    public void setCapAtualMala(int capAtualMala) {
-        CapAtualMala = capAtualMala;
-    }
-
-    public int getRodas() {
-        return super.getRodas();
-    }
-
-    public void setRodas(int rodas) {
-
-        super.setRodas(rodas);
     }
 
     public void acelerar() {
@@ -103,6 +23,11 @@ public class Carro extends VeiculoTerrestre {
 
         }
 
+    }
+
+    public void ligar() {
+
+        super.ligar();
     }
 
     public void desligar() {
@@ -131,6 +56,61 @@ public class Carro extends VeiculoTerrestre {
             setEmMovimento(false);
             System.out.println("O carro parou");
         }
+    }
+
+    public void fecharMala() {
+        if (this.CapAtualMala > CapMala) {
+            System.out.println("IMPOSSIVEL fechar mala, ela está sobrecarregada.");
+        } else {
+            setMalaAberta(false);
+        }
+
+    }
+
+    public void darRe() {
+        if (isLigado()) {
+            if (getMalaAberta()) {
+                System.out.println("IMPOSSIVEL DAR RÉ, A mala está aberta");
+            } else {
+                System.out.println("Dando ré\nBI BI BI BI BI");
+            }
+        } else {
+            System.out.println("IMPOSSIVEL DAR RÉ, O carro está desligado");
+        }
+    }
+
+    // Getters
+    public int getPortas() {
+        return this.portas;
+    }
+
+    public int getCapMala() {
+        return this.CapMala;
+    }
+
+    public boolean isTetoSolar() {
+        return this.tetoSolar;
+    }
+
+    public Boolean getMalaAberta() {
+        return this.malaAberta;
+    }
+
+    public void setMalaAberta(Boolean malaAberta) {
+        this.malaAberta = malaAberta;
+    }
+
+    public int getCapAtualMala() {
+        return this.CapAtualMala;
+    }
+
+    public int getRodas() {
+        return super.getRodas();
+    }
+
+    public boolean isEmMovimento() {
+
+        return super.isEmMovimento();
     }
 
     public Motor getMotor() {
@@ -172,11 +152,7 @@ public class Carro extends VeiculoTerrestre {
         return super.isLigado();
     }
 
-    public void ligar() {
-
-        super.ligar();
-    }
-
+    // Setters
     public void setMotor(Motor motor) {
 
         super.setMotor(motor);
@@ -207,6 +183,10 @@ public class Carro extends VeiculoTerrestre {
         super.setModelo(modelo);
     }
 
+    public void setPortas(int portas) {
+        this.portas = portas;
+    }
+
     public void setPassageiros(int passageiros) {
         super.setPassageiros(passageiros);
     }
@@ -215,4 +195,25 @@ public class Carro extends VeiculoTerrestre {
         super.setPintura(pintura);
     }
 
+    public void setEmMovimento(Boolean emMovimento) {
+
+        super.setEmMovimento(emMovimento);
+    }
+
+    public void setRodas(int rodas) {
+
+        super.setRodas(rodas);
+    }
+
+    public void setCapMala(int capMala) {
+        this.CapMala = capMala;
+    }
+
+    public void setTetoSolar(boolean tetoSolar) {
+        this.tetoSolar = tetoSolar;
+    }
+
+    public void setCapAtualMala(int capAtualMala) {
+        this.CapAtualMala = capAtualMala;
+    }
 }

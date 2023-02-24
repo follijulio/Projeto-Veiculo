@@ -2,16 +2,20 @@ package JAVA.projetos.SistemaDeVeiculos;
 
 public abstract class Motor {
 
-    public String nome;
-    public int potencia;
+    private String nome;
+    private int potencia;
 
+
+    //Getters
     public String getNome() {
-        return nome;
+        return this.nome;
     }
     public int getPotencia() {
-        return potencia;
+        return this.potencia;
     }
     
+
+    //Setters
     public void setNome(String nome) {
         this.nome = nome;
     }
