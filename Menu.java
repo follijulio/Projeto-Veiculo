@@ -13,10 +13,8 @@ public class Menu {
         System.out.println("| _ - ° 1  -  ADICIONAR UM VEICULO ° - _ |");
         System.out.println("| _ - ° 2  -  PESQUISAR UM VEICULO ° - _ |");
         System.out.println("| _ - ° 3  -  ATUALIZAR UM VEICULO ° - _ |");
-        System.out.println("| _ - ° 4   -    REMOVER UM VEICULO ° - _ |");
-        System.out.println("| _ - ° ° - _|");
-        System.out.println("| _ - ° ° - _|");
-        System.out.println("| _ - ° ° - _|");
+        System.out.println("| _ - ° 4  -  REMOVER UM VEICULO ° - _ |");
+        System.out.println("| _ - ° 5  -  SAIR DO APP ° - _|");
         opcao = LNum.nextInt();
 
         switch (opcao) {
@@ -46,7 +44,11 @@ public class Menu {
                 break;
 
             case 5:
+                System.exit(0);
+                break;
 
+            default:
+                menu();
                 break;
 
         }
