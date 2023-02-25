@@ -48,7 +48,7 @@ public class Menu {
                 break;
 
             default:
-                menu();
+                this.menu();
                 break;
 
         }
@@ -58,20 +58,33 @@ public class Menu {
     private void adicionarNovoVeiculo() {
         System.out.println("1 (teste)");
 
+
+
+        this.menu();
     }
 
     private void pesquisarVeiculo() {
         System.out.println("2 (teste)");
 
+
+
+        this.menu();
     }
 
     private void atualizarVeiculo() {
         System.out.println("3 (teste)");
 
+
+
+        this.menu();
     }
 
     private void removerVeiculo() {
         System.out.println("4 (teste)");
 
+
+
+        this.menu();
     }
+    
 }
