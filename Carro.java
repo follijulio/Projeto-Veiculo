@@ -1,10 +1,10 @@
-
 public class Carro extends VeiculoTerrestre {
 
     private int portas;
     private int CapMala;
     private int CapAtualMala;
     private boolean tetoSolar;
+    private boolean tetoAberto;
     private Boolean malaAberta;
 
     public void abrirMala() {
@@ -78,6 +78,44 @@ public class Carro extends VeiculoTerrestre {
         }
     }
 
+    public void abrirTetoSolar() {
+        if (isTetoSolar()) {
+            if (isLigado()) {
+                if (isTetoAberto()) {
+                    System.out.println("O teto solar já está aberto");
+                } else {
+                    System.out.println("Abrindo teto solar");
+                    setTetoAberto(true);
+                }
+            } else {
+                System.out.println("O carro está desligado, assim sendo, não pode abrir o teto solar");
+            }
+        } else {
+
+            System.out.println("O carro não tem teto solar, por isso fica impossivel abrir o teto solar");
+        }
+
+    }
+
+    public void fecharTetoSolar() {
+        if (isTetoSolar()) {
+            if (isLigado()) {
+                if (isTetoAberto() == false) {
+                    System.out.println("O teto solar já está fechado");
+                } else {
+                    System.out.println("Fechando teto solar");
+                    setTetoAberto(false);
+                }
+            } else {
+                System.out.println("O carro está desligado, assim sendo, não pode fechar o teto solar");
+            }
+        } else {
+
+            System.out.println("O carro não tem teto solar, por isso fica impossivel fechar o teto solar");
+        }
+
+    }
+
     // Getters
     public int getPortas() {
         return this.portas;
@@ -117,5 +155,13 @@ public class Carro extends VeiculoTerrestre {
 
     public void setCapAtualMala(int capAtualMala) {
         this.CapAtualMala = capAtualMala;
+    }
+
+    public boolean isTetoAberto() {
+        return tetoAberto;
+    }
+
+    public void setTetoAberto(boolean tetoAberto) {
+        this.tetoAberto = tetoAberto;
     }
 }

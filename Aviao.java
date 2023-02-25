@@ -1,5 +1,3 @@
-
-
 public abstract class Aviao extends Veiculo {
 
     private float envergaduraAsa;

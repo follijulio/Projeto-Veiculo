@@ -1,16 +1,13 @@
-
-
 public class AviaoAgricola extends Aviao {
 
     private int capacidadeIrrigação;
     private boolean compartimentoAberto;
-    private boolean tremAberto;
     private int cargaComp;
 
     // Metodos
     public void abrirCompatimento() {
         if (isCompartimentoAberto()) {
-            System.out.println("Compartimento já estava aberto");
+            System.out.println("Compartimento já estava aberto.");
         } else {
             System.out.println("Abrindo compartimento...");
             setCompartimentoAberto(true);
@@ -74,8 +71,28 @@ public class AviaoAgricola extends Aviao {
     }
 
     public void fecharTrem() {
-        System.out.println("IMPOSSIVEL FECHAR TREM DE POUSO.");
+        System.out.println("IMPOSSIVEL FECHAR TREM DE POUSO");
 
+    }
+
+    public void acelerar() {
+
+        super.acelerar();
+    }
+
+    public void ligar() {
+
+        super.ligar();
+    }
+
+    public void desligar() {
+
+        super.desligar();
+    }
+
+    public void frear() {
+
+        super.frear();
     }
 
     // Getters
@@ -91,20 +108,9 @@ public class AviaoAgricola extends Aviao {
         return this.compartimentoAberto;
     }
 
-    public boolean isTremAberto() {
-        return this.tremAberto;
-    }
-
+    // Setters
     public void setCompartimentoAberto(boolean compartimentoAberto) {
         this.compartimentoAberto = compartimentoAberto;
-    }
-
-    public void setTremAberto() {
-        this.tremAberto = true;
-    }
-
-    public void setTremAberto(boolean tremAberto) {
-        this.tremAberto = tremAberto;
     }
 
     public int getCargaComp() {

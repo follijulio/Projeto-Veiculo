@@ -1,5 +1,3 @@
-
-
 public abstract class Veiculo {
     private int id;
     private String marca;

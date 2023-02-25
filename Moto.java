@@ -1,11 +1,16 @@
-
 public class Moto extends VeiculoTerrestre {
 
     private boolean embreagem;
 
-    public void darGrau() {
-        System.out.println("RANDANDANDA\nOLHA A QUEDA MININUUUUU");
 
+    public void darGrau() {
+        System.out.println("Dando grau HANDANDAM");
+
+    }
+
+    public void acelerar() {
+        System.out.println("Acelerando\nVRUMMMMMMMMMM");
+        super.acelerar();
     }
 
     public boolean isEmbreagem() {
@@ -14,11 +19,6 @@ public class Moto extends VeiculoTerrestre {
 
     public void setEmbreagem(boolean embreagem) {
         this.embreagem = embreagem;
-    }
-
-    public void acelerar() {
-        System.out.println("Acelerando\nVRUMMMMMMMMMM");
-        super.acelerar();
     }
 
 }

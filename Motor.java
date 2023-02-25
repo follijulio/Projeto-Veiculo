@@ -1,5 +1,3 @@
-
-
 public abstract class Motor {
 
     private String nome;
