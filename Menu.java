@@ -48,6 +48,7 @@ public class Menu {
                 break;
 
             default:
+            System.out.println("selecione uma opção válida!");
                 this.menu();
                 break;
 
