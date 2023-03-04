@@ -1,5 +1,3 @@
-package JAVA.projetos.SistemaDeVeiculos;
-
 public abstract class Aviao extends Veiculo {
 
     private float envergaduraAsa;

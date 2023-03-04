@@ -1,11 +1,10 @@
-package JAVA.projetos.SistemaDeVeiculos;
-
 public class Carro extends VeiculoTerrestre {
 
     private int portas;
     private int CapMala;
     private int CapAtualMala;
     private boolean tetoSolar;
+    private boolean tetoAberto;
     private Boolean malaAberta;
 
     public void abrirMala() {
@@ -79,6 +78,44 @@ public class Carro extends VeiculoTerrestre {
         }
     }
 
+    public void abrirTetoSolar() {
+        if (isTetoSolar()) {
+            if (isLigado()) {
+                if (isTetoAberto()) {
+                    System.out.println("O teto solar já está aberto");
+                } else {
+                    System.out.println("Abrindo teto solar");
+                    setTetoAberto(true);
+                }
+            } else {
+                System.out.println("O carro está desligado, assim sendo, não pode abrir o teto solar");
+            }
+        } else {
+
+            System.out.println("O carro não tem teto solar, por isso fica impossivel abrir o teto solar");
+        }
+
+    }
+
+    public void fecharTetoSolar() {
+        if (isTetoSolar()) {
+            if (isLigado()) {
+                if (isTetoAberto() == false) {
+                    System.out.println("O teto solar já está fechado");
+                } else {
+                    System.out.println("Fechando teto solar");
+                    setTetoAberto(false);
+                }
+            } else {
+                System.out.println("O carro está desligado, assim sendo, não pode fechar o teto solar");
+            }
+        } else {
+
+            System.out.println("O carro não tem teto solar, por isso fica impossivel fechar o teto solar");
+        }
+
+    }
+
     // Getters
     public int getPortas() {
         return this.portas;
@@ -92,6 +129,10 @@ public class Carro extends VeiculoTerrestre {
         return this.tetoSolar;
     }
 
+    public int getCapAtualMala() {
+        return this.CapAtualMala;
+    }
+
     public Boolean getMalaAberta() {
         return this.malaAberta;
     }
@@ -100,109 +141,8 @@ public class Carro extends VeiculoTerrestre {
         this.malaAberta = malaAberta;
     }
 
-    public int getCapAtualMala() {
-        return this.CapAtualMala;
-    }
-
-    public int getRodas() {
-        return super.getRodas();
-    }
-
-    public boolean isEmMovimento() {
-
-        return super.isEmMovimento();
-    }
-
-    public Motor getMotor() {
-
-        return super.getMotor();
-    }
-
-    public int getCapacidadeTanque() {
-
-        return super.getCapacidadeTanque();
-    }
-
-    public int getId() {
-
-        return super.getId();
-    }
-
-    public String getMarca() {
-
-        return super.getMarca();
-    }
-
-    public String getModelo() {
-        return super.getModelo();
-    }
-
-    public int getPassageiros() {
-
-        return super.getPassageiros();
-    }
-
-    public String getPintura() {
-
-        return super.getPintura();
-    }
-
-    public boolean isLigado() {
-
-        return super.isLigado();
-    }
-
-    // Setters
-    public void setMotor(Motor motor) {
-
-        super.setMotor(motor);
-    }
-
-    public void setCapacidadeTanque(int capacidadeTanque) {
-
-        super.setCapacidadeTanque(capacidadeTanque);
-    }
-
-    public void setId(int id) {
-
-        super.setId(id);
-    }
-
-    public void setLigado(boolean ligado) {
-
-        super.setLigado(ligado);
-    }
-
-    public void setMarca(String marca) {
-
-        super.setMarca(marca);
-    }
-
-    public void setModelo(String modelo) {
-
-        super.setModelo(modelo);
-    }
-
     public void setPortas(int portas) {
         this.portas = portas;
-    }
-
-    public void setPassageiros(int passageiros) {
-        super.setPassageiros(passageiros);
-    }
-
-    public void setPintura(String pintura) {
-        super.setPintura(pintura);
-    }
-
-    public void setEmMovimento(Boolean emMovimento) {
-
-        super.setEmMovimento(emMovimento);
-    }
-
-    public void setRodas(int rodas) {
-
-        super.setRodas(rodas);
     }
 
     public void setCapMala(int capMala) {
@@ -215,5 +155,13 @@ public class Carro extends VeiculoTerrestre {
 
     public void setCapAtualMala(int capAtualMala) {
         this.CapAtualMala = capAtualMala;
+    }
+
+    public boolean isTetoAberto() {
+        return tetoAberto;
+    }
+
+    public void setTetoAberto(boolean tetoAberto) {
+        this.tetoAberto = tetoAberto;
     }
 }

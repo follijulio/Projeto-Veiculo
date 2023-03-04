@@ -1,124 +1,50 @@
-package JAVA.projetos.SistemaDeVeiculos;
-
 public class AviaoPassageiro extends Aviao {
 
     private boolean tremAberto;
+    private int numTrem;
 
     // Metodos
     public void abrirTrem() {
+        if (isEmVoo()) {
+            if (isTremAberto()) {
+                System.out.println("O trem de pouso já está aberto");
+            } else {
+                System.out.println("Abrindo compartimento...");
+                setTremAberto(true);
+            }
+
+        }
 
     }
 
     public void fecharTrem() {
+        if (isEmVoo()) {
+            if (isTremAberto() == false) {
+                System.out.println("O trem de pouso já está fechado");
+            } else {
+                System.out.println("Fechando trem de pouso");
+                setTremAberto(true);
+            }
 
-    }
-
-    public void acelerar() {
-
-        super.acelerar();
-    }
-
-    public void ligar() {
-
-        super.ligar();
-    }
-
-    public void desligar() {
-
-        super.desligar();
-    }
-
-    public void frear() {
-
-        super.frear();
-    }
-
-    // Getters
-    public Motor getMotor() {
-
-        return super.getMotor();
-    }
-
-    public int getCapacidadeTanque() {
-
-        return super.getCapacidadeTanque();
-    }
-
-    public int getId() {
-
-        return super.getId();
-    }
-
-    public String getMarca() {
-
-        return super.getMarca();
-    }
-
-    public String getModelo() {
-        return super.getModelo();
-    }
-
-    public int getPassageiros() {
-
-        return super.getPassageiros();
-    }
-
-    public String getPintura() {
-
-        return super.getPintura();
-    }
-
-    public boolean isLigado() {
-
-        return super.isLigado();
-    }
-
-    public void setPassageiros(int passageiros) {
-        super.setPassageiros(passageiros);
+        } else {
+            System.out.println("Impossivel fechar trem de pouso, o avião não está em vou");
+        }
     }
 
     public boolean isTremAberto() {
         return this.tremAberto;
     }
 
-    // Setters
-
-    public void setMotor(Motor motor) {
-
-        super.setMotor(motor);
-    }
-
-    public void setCapacidadeTanque(int capacidadeTanque) {
-
-        super.setCapacidadeTanque(capacidadeTanque);
-    }
-
-    public void setId(int id) {
-
-        super.setId(id);
-    }
-
-    public void setLigado(boolean ligado) {
-
-        super.setLigado(ligado);
-    }
-
-    public void setMarca(String marca) {
-
-        super.setMarca(marca);
-    }
-
-    public void setModelo(String modelo) {
-
-        super.setModelo(modelo);
-    }
-
-    public void setPintura(String pintura) {
-        super.setPintura(pintura);
-    }
-
     public void setTremAberto(boolean tremAberto) {
         this.tremAberto = tremAberto;
+    }
+
+    public int getNumTrem() {
+        return numTrem;
+    }
+
+    public void setNumTrem(int numTrem) {
+        this.numTrem = numTrem;
     }
 
 }
