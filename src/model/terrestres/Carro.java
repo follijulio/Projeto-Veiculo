@@ -1,3 +1,5 @@
+package src.model.terrestres;
+
 public class Carro extends VeiculoTerrestre {
 
     private int portas;

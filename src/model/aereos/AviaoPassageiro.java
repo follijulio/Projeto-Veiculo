@@ -1,3 +1,5 @@
+package src.model.aereos;
+
 public class AviaoPassageiro extends Aviao {
 
     private boolean tremAberto;

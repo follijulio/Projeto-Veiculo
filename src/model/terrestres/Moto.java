@@ -1,7 +1,8 @@
+package src.model.terrestres;
+
 public class Moto extends VeiculoTerrestre {
 
     private boolean embreagem;
-
 
     public void darGrau() {
         System.out.println("Dando grau HANDANDAM");

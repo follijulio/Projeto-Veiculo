@@ -1,3 +1,5 @@
+package src.model;
+
 public abstract class Veiculo {
     private int id;
     private String marca;
@@ -75,8 +77,6 @@ public abstract class Veiculo {
         }
 
     }
-
-    
 
     // Getters
     public int getId() {

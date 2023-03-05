@@ -1,3 +1,5 @@
+package src.model.aereos;
+
 public class AviaoAgricola extends Aviao {
 
     private int capacidadeIrrigação;
