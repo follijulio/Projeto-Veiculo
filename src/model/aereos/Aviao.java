@@ -1,3 +1,7 @@
+package src.model.aereos;
+
+import src.model.Veiculo;
+
 public abstract class Aviao extends Veiculo {
 
     private float envergaduraAsa;

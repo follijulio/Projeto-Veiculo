@@ -1,3 +1,5 @@
+package src.view;
+
 import java.util.*;
 
 public class Menu {
@@ -48,7 +50,7 @@ public class Menu {
                 break;
 
             default:
-            System.out.println("selecione uma opção válida!");
+                System.out.println("selecione uma opção válida!");
                 this.menu();
                 break;
 
@@ -59,15 +61,11 @@ public class Menu {
     private void adicionarNovoVeiculo() {
         System.out.println("1 (teste)");
 
-
-
         this.menu();
     }
 
     private void pesquisarVeiculo() {
         System.out.println("2 (teste)");
-
-
 
         this.menu();
     }
@@ -75,17 +73,13 @@ public class Menu {
     private void atualizarVeiculo() {
         System.out.println("3 (teste)");
 
-
-
         this.menu();
     }
 
     private void removerVeiculo() {
         System.out.println("4 (teste)");
 
-
-
         this.menu();
     }
-    
+
 }
