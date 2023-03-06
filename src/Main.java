@@ -1,6 +1,4 @@
-package src;
-
-import src.view.Menu;
+import view.Menu;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package src.model.aereos;
+package  model.aereos;
 
 public class AviaoPassageiro extends Aviao {
 
