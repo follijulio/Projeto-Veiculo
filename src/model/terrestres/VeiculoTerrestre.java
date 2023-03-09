@@ -1,6 +1,6 @@
-package src.model.terrestres;
+package  model.terrestres;
 
-import src.model.Veiculo;
+import  model.Veiculo;
 
 public class VeiculoTerrestre extends Veiculo {
     private int rodas;

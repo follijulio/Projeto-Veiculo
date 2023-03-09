@@ -1,4 +1,4 @@
-package src.model.terrestres;
+package  model.terrestres;
 
 public class Moto extends VeiculoTerrestre {
 

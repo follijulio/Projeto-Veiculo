@@ -1,6 +1,6 @@
-package src.model.aereos;
+package model.aereos;
 
-import src.model.Veiculo;
+import model.Veiculo;
 
 public abstract class Aviao extends Veiculo {
 
